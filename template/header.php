@@ -83,7 +83,7 @@ $user_role = $_SESSION['role'] ?? null;
             <div class="d-flex align-items-center order-lg-3">
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <span class="text-white me-3 d-none d-lg-inline-block small">
-                        **<?php echo htmlspecialchars($_SESSION['username']); ?>** (<?php echo ucfirst($user_role); ?>)
+                        <?php echo htmlspecialchars($_SESSION['username']); ?> (<?php echo ucfirst($user_role); ?>)
                     </span>
                     <a href="<?php echo $base_path; ?>logout.php" class="btn btn-outline-danger btn-sm me-2">Logout</a>
                 <?php endif; ?>
